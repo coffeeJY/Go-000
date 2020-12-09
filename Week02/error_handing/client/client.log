@@ -1,0 +1,1 @@
+ERROR: 2020/12/02 19:12:19 main.go:31: rpc error: code = FailedPrecondition desc = Error 1146: Table 'go000.t_user' doesn't exist: sql: no rows in result set

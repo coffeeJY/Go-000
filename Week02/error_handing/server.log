@@ -1,0 +1,87 @@
+Info: 2020/12/03 12:14:32 main.go:47: Listen on 127.0.0.1:8890
+Info: 2020/12/03 12:18:49 main.go:51: Listen on 127.0.0.1:8890
+Info: 2020/12/03 12:54:57 main.go:50: Listen on 127.0.0.1:8890
+ERROR: 2020/12/03 12:55:05 main.go:24: Error 1146: Table 'go000.t_user' doesn't exist
+QueryUserByIDErr
+error_handing/server/dao.QueryUserByID
+	D:/work/learn/GO000/Go-000/Week02/error_handing/server/dao/user.go:15
+main.grpcService.GetUserInfo
+	D:/work/learn/GO000/Go-000/Week02/error_handing/server/main.go:20
+error_handing/pb._ErrorHanding_GetUserInfo_Handler
+	D:/work/learn/GO000/Go-000/Week02/error_handing/pb/errorHanding.pb.go:198
+google.golang.org/grpc.(*Server).processUnaryRPC
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:1210
+google.golang.org/grpc.(*Server).handleStream
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:1533
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:871
+runtime.goexit
+	C:/Go/src/runtime/asm_amd64.s:1373
+Info: 2020/12/02 19:03:27 main.go:62: Listen on 127.0.0.1:8890
+ERROR: 2020/12/02 19:03:42 main.go:28: Error 1146: Table 'go000.t_user' doesn't exist
+sql: no rows in result set
+error_handing/server/dao.QueryUserByID
+	D:/work/learn/GO000/Go-000/Week02/error_handing/server/dao/user.go:19
+main.grpcService.GetUserInfo
+	D:/work/learn/GO000/Go-000/Week02/error_handing/server/main.go:25
+error_handing/pb._ErrorHanding_GetUserInfo_Handler
+	D:/work/learn/GO000/Go-000/Week02/error_handing/pb/errorHanding.pb.go:198
+google.golang.org/grpc.(*Server).processUnaryRPC
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:1210
+google.golang.org/grpc.(*Server).handleStream
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:1533
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:871
+runtime.goexit
+	C:/Go/src/runtime/asm_amd64.s:1373
+Info: 2020/12/02 19:04:49 main.go:69: Listen on 127.0.0.1:8890
+ERROR: 2020/12/02 19:04:57 main.go:28: Error 1146: Table 'go000.t_user' doesn't exist
+sql: no rows in result set
+error_handing/server/dao.QueryUserByID
+	D:/work/learn/GO000/Go-000/Week02/error_handing/server/dao/user.go:19
+main.grpcService.GetUserInfo
+	D:/work/learn/GO000/Go-000/Week02/error_handing/server/main.go:25
+error_handing/pb._ErrorHanding_GetUserInfo_Handler
+	D:/work/learn/GO000/Go-000/Week02/error_handing/pb/errorHanding.pb.go:198
+google.golang.org/grpc.(*Server).processUnaryRPC
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:1210
+google.golang.org/grpc.(*Server).handleStream
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:1533
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:871
+runtime.goexit
+	C:/Go/src/runtime/asm_amd64.s:1373
+Info: 2020/12/02 19:06:22 main.go:57: Listen on 127.0.0.1:8890
+ERROR: 2020/12/02 19:06:29 main.go:27: sql: no rows in result set
+Error 1146: Table 'go000.t_user' doesn't exist
+error_handing/server/dao.QueryUserByID
+	D:/work/learn/GO000/Go-000/Week02/error_handing/server/dao/user.go:18
+main.grpcService.GetUserInfo
+	D:/work/learn/GO000/Go-000/Week02/error_handing/server/main.go:24
+error_handing/pb._ErrorHanding_GetUserInfo_Handler
+	D:/work/learn/GO000/Go-000/Week02/error_handing/pb/errorHanding.pb.go:198
+google.golang.org/grpc.(*Server).processUnaryRPC
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:1210
+google.golang.org/grpc.(*Server).handleStream
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:1533
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:871
+runtime.goexit
+	C:/Go/src/runtime/asm_amd64.s:1373
+Info: 2020/12/02 19:12:11 main.go:57: Listen on 127.0.0.1:8890
+ERROR: 2020/12/02 19:12:19 main.go:27: sql: no rows in result set
+Error 1146: Table 'go000.t_user' doesn't exist
+error_handing/server/dao.QueryUserByID
+	D:/work/learn/GO000/Go-000/Week02/error_handing/server/dao/user.go:18
+main.grpcService.GetUserInfo
+	D:/work/learn/GO000/Go-000/Week02/error_handing/server/main.go:24
+error_handing/pb._ErrorHanding_GetUserInfo_Handler
+	D:/work/learn/GO000/Go-000/Week02/error_handing/pb/errorHanding.pb.go:198
+google.golang.org/grpc.(*Server).processUnaryRPC
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:1210
+google.golang.org/grpc.(*Server).handleStream
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:1533
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	D:/work/code/mygolang/pkg/mod/google.golang.org/grpc@v1.33.2/server.go:871
+runtime.goexit
+	C:/Go/src/runtime/asm_amd64.s:1373

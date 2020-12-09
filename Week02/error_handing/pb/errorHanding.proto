@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package errorHanding;
+option go_package= "errorHanding";
+
+service ErrorHanding {
+  rpc GetUserInfo(GetUserInfoReq) returns (GetUserInfoRsp) {}
+}
+
+message GetUserInfoReq {
+  string userId = 1;
+}
+
+message GetUserInfoRsp {
+  string userId = 1;
+  string userName = 2;
+  int32 age = 3;
+}

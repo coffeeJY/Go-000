@@ -1,18 +1,12 @@
 package repository
 
-import (
-	// "github.com/go-redis/redis/v8"
-	// "github.com/go-xorm/xorm"
-	"mykit/internal/auth/model"
-)
-
 type Repository struct {
 	// db *xorm.Engine
 	// rd *redis.Client
 }
 
 type Server interface {
-	GetUserById(id int64) (user *model.User, err error)
+	Login(d string, psw string) (token string, err error)
 	Close()
 }
 

@@ -7,6 +7,10 @@ import (
 
 func (s Service) Login(ctx context.Context, req *pb.LoginReq) (*pb.LoginResp, error) {
 	resp := new(pb.LoginResp)
-	resp.Token = "TokenToken"
+	token, err := s.repo.Login(req.UserName, req.Password)
+	if err != nil {
+		return nil, err
+	}
+	resp.Token = token
 	return resp, nil
 }

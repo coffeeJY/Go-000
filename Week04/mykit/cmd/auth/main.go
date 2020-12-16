@@ -21,7 +21,7 @@ func main() {
 	grpcSrv := grpcTransport.NewServer(":8000")
 
 	repo := repository.NewRepository()
-	gs := service.NewGreeterService(repo)
+	gs := service.NewService(repo)
 
 	pb.RegisterAuthServerServer(grpcSrv.Server, gs)
 	fmt.Println("Listen on " + ":8000")

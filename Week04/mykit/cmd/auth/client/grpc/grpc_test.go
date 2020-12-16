@@ -10,7 +10,7 @@ import (
 	"testing"
 )
 
-const address = "127.0.0.1:8000"
+const address = "127.0.0.1:8890"
 
 func TestRepository_Login(t *testing.T) {
 	convey.Convey("TestRepository_Login", t, func(c convey.C) {

@@ -16,7 +16,7 @@ func main() {
 	g, ctx := errgroup.WithContext(ctx)
 
 	// transport server
-	grpcSrv := grpcTransport.NewServer(":8000")
+	grpcSrv := grpcTransport.NewServer(":8890")
 
 	// repo := repository.NewRepository()
 	// gs := service.NewService(repo)
@@ -24,7 +24,7 @@ func main() {
 	gs := CreateConcatService()
 	pb.RegisterAuthServerServer(grpcSrv.Server, gs)
 
-	fmt.Println("Listen on " + ":8000")
+	fmt.Println("Listen on " + ":8890")
 
 	g.Go(func() error {
 		return grpcSrv.Start(ctx)

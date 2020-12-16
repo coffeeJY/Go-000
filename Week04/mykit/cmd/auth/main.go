@@ -6,8 +6,6 @@ import (
 	"golang.org/x/sync/errgroup"
 	"log"
 	pb "mykit/api/auth/grpc"
-	"mykit/internal/auth/repository"
-	"mykit/internal/auth/service"
 	signal "mykit/pkg/signal"
 	grpcTransport "mykit/pkg/transport/grpc"
 )
@@ -20,10 +18,12 @@ func main() {
 	// transport server
 	grpcSrv := grpcTransport.NewServer(":8000")
 
-	repo := repository.NewRepository()
-	gs := service.NewService(repo)
+	// repo := repository.NewRepository()
+	// gs := service.NewService(repo)
 
+	gs := CreateConcatService()
 	pb.RegisterAuthServerServer(grpcSrv.Server, gs)
+
 	fmt.Println("Listen on " + ":8000")
 
 	g.Go(func() error {
